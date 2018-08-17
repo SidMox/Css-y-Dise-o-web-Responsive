@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Dancing';
+    src: url('Dancing Script OT.otf');
+}
+
+body{
+    background-color: #02010A;
+    font-family: 'Dancing';
+}
+h1,p,a{
+    color:white;
+}
+section, div{
+    padding: 1%;
+    text-align: center;
+}
+img{
+    margin: 1%;
+    box-shadow: 2px 2px 2px #02010a;
+}
+header{
+    padding: 1%;
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    animation: animacion 1s;
+}
+@-webkit-keyframes animacion{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+}
+header h1{
+    text-shadow: 2px 2px 2px #02010A; 
+    text-align: left;
+    display: inline;
+}
+header nav{
+    float: right;
+    font-size: 30px;
+    word-spacing: 10px;
+}
+.actual{
+    text-decoration-line: none;
+}
+#imagen-central{
+    background-color: #82C3a6;
+}
+#imagen-central picture img{
+    width: 65%;
+}
+#imagen-secundaria{
+background-color: #d5c75f;
+border: 1px solid #d5c75f;
+display: flex;
+flex-direction: row; 
+}
+
+#imagen-secundaria div a img{
+    width: 75%;
+}
+.bloque1{
+    transition: transform 1s;
+}
+.bloque1:hover{
+    transform:rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6 !important;
+    border: 2px solid;
+}
+.bloque2{
+    transition: transform 1s;
+    box-shadow: #82c3a6;
+}
+.bloque2:hover{
+    transform:translate(20px,-5px);
+    box-shadow: 2px 2px 2px #82c3a6 !important;
+    border: 2px solid;
+}
+footer{
+    padding: 1%;
+    background-color: #C6d5c5;
+    border-radius:  0 0 10px 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+}
+footer div{
+    text-align: left;
+}
+footer div p,footer div a{
+    color: black;
+}
+.social-red{
+    width: 10%;
+}
